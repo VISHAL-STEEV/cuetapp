@@ -1,0 +1,58 @@
+
+
+<nav class="navbar" style="background-color: #1d88d5;  height: 70px;">
+    
+  <div>
+    <img  style="margin-left: 80px; width: 54px;height: 54px;" src="/assets/images/img6.png" alt="">
+  </div>
+ <div>
+  <select  [(ngModel)]="lessthanorgraterthan" class="form-select" aria-label="Default select example">
+    <option value="lessthan">less than</option>
+    <option value="graterthan">grater than</option>
+    
+  </select>
+  <input type="text" [(ngModel)]="filterdata">
+  <button (click)="chartfilterdata(filterdata)" class="btn">Apply</button>
+ </div>
+
+</nav>
+
+
+<div class="container">
+
+            
+<div class="row">
+  <div class="col-6">
+   <div style="width:100%;">
+     <canvas id="myChart" ></canvas>
+  </div>
+  </div>
+  <div class="col-6">
+      <div class="doughnutClass">
+        <canvas  id="doughnut" ></canvas>
+     </div>
+     </div>
+</div>
+
+
+
+<div class="row">
+  <div class="col-6">
+   <div class="piechartClass">
+     <canvas id="piechart" ></canvas>
+  </div>
+  </div>
+  <div class="col-6">
+    <div style="width:100%;">
+      <canvas id="linechart" ></canvas>
+   </div>
+   </div>
+</div>
+
+
+
+
+
+
+</div>
+

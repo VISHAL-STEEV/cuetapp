@@ -1,0 +1,58 @@
+<div class="main-cont">
+     <div class="row">
+        <div class="col-12">
+            <h3>Sign In</h3>
+        </div>
+        <div class="container px-4 text-center">
+            <div class="row gx-4">
+              <div class="col">
+               <div class="p-3">
+                <button class="d-flex flex-row  align-items-center   but-google" type="button"> 
+                    <img src="/assets/images/google.png" >
+                    <p>Sign in with Google</p> 
+                </button>
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3">
+                    <button class="d-flex flex-row  align-items-center but-apple " type="button"> 
+                        <img src="/assets/images/apple.png" >
+                        <p>Sign in with Apple</p> 
+                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+        <div class="col-12   or-with-email">
+
+          <span class="line_1"></span>
+          <span class="line_2"></span>
+            <p>   or with email  </p>
+        </div>
+          
+        <form  [formGroup]="formValue">
+        <div class="col-12 input1">
+            <input formControlName="mailmobile" type="text" placeholder="email id / mobile number">
+        </div>
+        <div class="col-12  input2">
+            <input formControlName="password" [type]="changetype?'password':'text'" placeholder="password">
+            <span (click)="viewpass()" class="eye"><i [ngClass]="visible?   'fa fa-eye-slash fa-lg':'fa fa-eye fa-lg '" aria-hidden="true"></i></span>
+            
+        </div>
+        <div class="col-12 forgot_pass">
+             <a href="#">Forgot password ?</a>
+        </div>
+
+        <div class="col-12 continue_but">
+              <button (click)="login()" type="button " >
+                Continue
+              </button>
+        </div>
+      </form>
+        <div class="col-12 Sing-upM ">
+              <p>Not a Member yet?  <span class="TErms1" routerLink="/signUp">Sign up</span> </p>
+        </div>
+          
+     </div>
+</div>

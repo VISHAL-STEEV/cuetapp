@@ -1,0 +1,6 @@
+.pop_up_class{
+    width: 850px;
+    height: 850px;
+    display: flex;
+    align-items: center;
+}

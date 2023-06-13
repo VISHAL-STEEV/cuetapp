@@ -1,0 +1,218 @@
+.ul-div{
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.ul-div li {
+    align-self: flex-end;
+    list-style: none;
+    color:  #20428C;
+    padding-top: 70px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+  }
+
+  .ul-div li:hover{
+    color: #04205b;
+    font-size: .9rem;
+    text-decoration: underline;
+  }
+
+  
+
+
+
+  #signId{
+    background-color:  #E08433;
+    height: 30px;
+   margin-bottom: .5rem;
+   border-radius: 6px;
+   width: 6rem;
+  }
+  #signId p{
+    color: white;
+    font-size: 14px;
+    vertical-align: middle;
+    align-items: center;
+  }
+  .loginbt{
+    background-color: white;
+    height: 30px;
+    margin-bottom: .5rem;
+    border-radius: 6px;
+    width: 6rem;
+    border-color: #E08433 ;
+    color: #E08433;
+    outline: none;
+    cursor: pointer;
+  
+  }
+  .loginbt:active{
+    background-color: #E08433;
+    color: white;
+    outline: none;
+    
+  }
+
+  .button1{
+    background-color:#4F7FE9;
+    outline: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+    border: none;
+    height: 2rem;
+    width: 6.5rem;
+    cursor: pointer;
+  }
+   .button2{
+    background-color: #3D6ACB;
+    outline: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    align-items: center;
+    border: none;
+    height: 2rem;
+    width: 2.5rem;
+    cursor: pointer;
+   }
+   .brochure-bt{
+    padding-top: .8rem;
+    
+   }
+    .main-body{
+      position: relative;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      height: 6.5rem;
+     }
+
+
+
+     @media screen and (max-width: 414px){
+
+
+      
+     }
+
+
+
+
+   @media screen and (max-width: 1254px){
+
+    .ul-div li{
+      height: 1px;
+      font-size: large;
+      margin: 0;
+      padding: 25px;
+     
+    }
+
+
+    .menu-1{
+      position: fixed;
+      right: -280px;
+      top: 97px;
+      width: 280px;
+   
+      height: 670%;
+      background-color: white;
+      z-index: 10;
+      flex-direction: column;
+      
+    }
+    .ul-div{
+     display: inline;
+    
+      
+    }
+
+
+    .menu_icon{
+      position: relative;
+      display: inline-block;
+      top: 35px;
+      right: 15px; 
+      cursor: pointer;
+    
+    }
+
+    .menu_icon span{
+       width: 40px;
+       height: 2px;
+       background-color: rgb(0, 0, 0);
+        display:block;
+        transition: 0.4s ease-in-out  ;
+    
+    }
+
+    .menu_icon span:nth-child(2){
+     
+      margin: 10px 0;
+    }
+
+  
+
+ .menuClass{
+  right: 1px;
+  transition: 0.4s ease-in-out;
+ }
+
+.img-arr1{
+  position: absolute;
+  top: 35rem;
+  right: 13.8rem;
+}
+ 
+.img-arr2{
+  position: absolute;
+  top: 35rem;
+  right: 9.6rem;
+}
+
+.img-arr3{
+  position: absolute;
+  top: 35rem;
+  right: 1.7rem;
+}
+.img-arr4{
+  position: absolute;
+  top: 35rem;
+  right: 5.7rem;
+}
+.loginbt{
+  position: absolute;
+  top: 32rem;
+  right: 1.8rem;
+}
+.Sign-bt{
+
+  position: absolute;
+  top: 32rem;
+  right: 9.7rem;
+}
+
+.menu_icon_Class span:nth-child(2){
+  display: none;
+}
+.menu_icon_Class span:nth-child(1){
+  transform: rotate(40deg);
+}
+.menu_icon_Class span:nth-child(3){
+  transform: rotate(-40deg);
+  margin-top: -1px;
+}
+
+
+
+
+   }
+  
+
+
+
+   
+
+   

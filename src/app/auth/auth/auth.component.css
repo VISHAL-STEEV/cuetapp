@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0  ;
+
+}
+
+img{
+    width: 140px;
+    height: 140px;
+}
+
+img:hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.paginater{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-left: 390px;
+}
+.bodyClass{
+    display: flex;
+    width: 100%;
+  
+}
+.bodyClass1{
+    flex: 1;
+    display: flex;
+     flex-direction: column;
+}
+.sortbtn{
+    flex: 1;
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+}
+.sortbtn:hover{
+ background-color:#1d88d5;
+ transition: 0.4s ease-in-out;
+ color: white;
+
+}
+.sortbtn p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    font-family: 'Roboto';
+    
+}
+.bodyClass2{
+  flex: 6;
+  margin-left: 10px;
+  align-items: center;
+   
+}
+
+.inputClass input{
+    top: 25px;
+    height: 30px;
+   width: 400px;
+  position: absolute;
+  left: 220px;
+}
+
+
+.Addtocart{
+    width: 80px;
+     height: 30px;
+      font-size: 14px;
+}

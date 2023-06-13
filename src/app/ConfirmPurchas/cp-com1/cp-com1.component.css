@@ -1,0 +1,252 @@
+.purchase_div{
+    width: 600px;
+    height: 50px;
+    background-color:#E08433 ;
+}
+.purchase_divp{
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        text-align: center;
+        display: inline-block;
+        padding-left: 225px;
+        padding-top: 15px;
+        color: white;
+    
+
+}
+
+
+
+
+.purchase_div_btn{
+    outline: none;
+    background-color:#E08433;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 155px;
+}
+.purchase_div_btn img{
+    width: 18px;
+    cursor: pointer;
+}
+
+
+.main_body{
+    width: 600px;
+    height: 400px;
+}
+.sub_body{
+    width: 540px;
+    height: 330px;
+    margin-left: 30px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.sub_body1{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+   
+}
+.sub_body2{
+    background-color: #F2F6FF;
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    margin: 0;
+    position: absolute;
+    left: 272px;
+}
+
+
+.sub_body2_div1{
+    display: inline-block;
+   
+}
+.sub_body2_div2{
+    display: inline-block;
+}
+
+.sub_body2_p2{
+    display: inline-block;
+    position: absolute;
+    top: 29px;
+    right: 15px;
+}
+.sub_body2_p1{
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.sub_body2_p2 p{
+    font-size: 12px;
+    color: #20428C;
+     margin: 0;
+     padding: 0;
+}
+.sub_body2_p1 p{
+    font-size: 12px;
+    color: #20428C; 
+    margin: 0;
+    padding: 0;
+}
+.sub_body2_bottom{
+    position: absolute;
+    top: 160px;
+}
+.total{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0;
+    position: absolute;
+    top: 31px;
+    left: 15px;
+    position: absolute;
+    color: #20428C;
+}
+.price{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    width: 78px;
+    left: 175px;
+    top: 27px;
+    color: #20428C;
+}
+.inclgst{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    left: 202px;
+    width: 70px;
+    top: 48px;
+    position: absolute;
+    color: #20428C;
+
+}
+.you_save{
+    font-family: 'Work Sans';
+    font-style: italic;
+    font-weight: 100;
+    font-size: 18px;
+    position: absolute;
+    left: 47px;
+    width: 180px;
+    top: 89px;
+    text-align: center;
+    color: #20428C;
+}
+.sub_body2_bottom button{
+    width: 240px;
+    height: 31px;
+    border-radius: 8px;
+    color: white;
+    background-color: #E08433;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 120px;
+    left: 13px;
+}
+
+.hr{
+    width: 235px;
+    height: 0.5px;
+    position: absolute;
+    left: 15px;
+    top: 16px;
+    background-color: #7681EB;
+}
+
+
+.sub_body1_top_p1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    color: #4F7FE9;
+}
+.sub_body1_top_p2{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    color: #20428C;
+}
+
+
+.sub_body1_top_p3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #20428C;
+
+}
+
+.sub_body1_bottom p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #4F7FE9;
+
+}
+.sub_body1_bottom label{
+  font-size: 14px;
+  color: #20428C;
+  font-family: 'Work Sans';  
+  font-style: normal;
+  font-weight: 500;
+  margin: 0px;
+  padding: 0;
+  padding-left: 5px;
+
+}
+
+.inp_class_1{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+.inp_class_2{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+.inp_class_3{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+.inp_class_4{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+
+
+input {
+    accent-color:  #E4842E;
+}
+

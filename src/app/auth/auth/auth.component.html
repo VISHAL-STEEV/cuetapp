@@ -1,0 +1,67 @@
+<nav class="navbar" style="background-color: #1d88d5;  height: 70px;">
+    
+      <div>
+        <img  style="margin-left: 80px; width: 54px;height: 54px;" src="/assets/images/img6.png" alt="">
+      </div>
+
+    <div class="inputClass">
+        <input type="text" class="form-control" id="exampleFormControlInput1" [(ngModel)]="inputsearchdata" placeholder="search">
+      </div>
+    
+</nav>
+
+
+<div class="container-fluid">
+    <div class="row   bodyClass ">
+
+     <div class="bodyClass1"> 
+        <div class="sortbtn" (click)="descending()"><p>Price-Low to High</p></div>
+        <div class="sortbtn" (click)="ascending()"><p>Price-High to Low</p></div>
+        <div class="sortbtn" (click)="filter('')"><p>All</p></div>
+        <div class="sortbtn" (click)="filter('electronics')"><p>electronics</p></div>
+        <div class="sortbtn" (click)="filter('jewelery')"><p>jewelery</p></div>
+     </div>
+
+
+      <div  class="bodyClass2" >
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>product Name </th>
+                        <th>Product Image </th>
+                        <th>Description</th>
+                        <th>price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let obj of cartDataTwo | search:inputsearchdata  | paginate: { itemsPerPage: itemperpage, currentPage: p } ">
+                        <td>{{obj.title}}</td>
+                        <td><img src="{{obj.image}}" ></td>
+                        <td>{{obj.description}}</td>
+                        <td><p>{{obj.price}}</p>
+                            <button class="btn btn-primary   Addtocart" (click)="Addtocart(obj)" >Add to cart</button>
+                        </td>
+                        
+                    </tr>
+                </tbody>
+            </table> 
+
+            <div class="paginater">
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </div>
+      </div>
+      
+    
+  
+       
+        
+    </div>
+
+</div>
+
+
+
+
+
+<router-outlet></router-outlet>
+

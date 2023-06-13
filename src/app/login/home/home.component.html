@@ -1,0 +1,208 @@
+
+<app-nav-com></app-nav-com>
+
+
+<div class="container-fluid  ">
+
+    <div class="img_cont">
+        <img  class="img_cont row  " src="/assets/images/frame 1 5.png">
+    </div>
+
+    <img class="img_main  img-fluid" src="/assets/images/main.png" >
+     
+
+    
+
+    <div class="row div_con ">
+        <p class="div_concp">Search YOUR DESIRED  <br>
+            University/COURSE FOR ADMISSION</p>
+        <input  class="div_coninp"  type="text" placeholder="Search... ">
+            <div class="inp_search"><img src="/assets/images/search.png"></div>
+            <div class="inp_button"><button><img src="/assets/images/dow.png"></button></div>
+
+        <div class="form-check">
+            <input class="form-check_class_inp" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="label-1" style="font-size: .95rem;" for="flexRadioDefault2">
+                University
+            </label>
+          </div>
+          <div class="form-check1  ">
+            <input  type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+            <label style="font-size: .95rem;" for="flexRadioDefault1">
+                Course
+            </label>
+          </div>
+
+    </div>
+
+    <div class="row text_Class ">
+            <h2>
+                Only dedicated CUET <br> Mentorship providers in India
+            </h2>
+    </div>
+
+
+    <div class=" details_class ">
+            <div class="row g-5 overflow-hidden text-center">
+
+                <div class="col">  
+                    <img src="/assets/images/img1.png" >
+                    <img id="live" src="/assets/images/live.png" >
+                    <p>General Test and English</p>
+                </div >
+                <div class="col">
+                    <img src="/assets/images/img2.png">
+                    <img id="live1" src="/assets/images/live.png" >
+                    <p>Doubt Clearing Session 
+                       <span style="font-size: 65%;  "> Weekend with subject teacher to clear doubts </span> </p>
+                </div>
+                <div class="col">
+                    <img src="/assets/images/img3.png">
+                    <p>Weekly Test  Series</p>
+                </div>
+                <div class="col">
+                    <img src="/assets/images/img4.png">
+                    <p>Monthly Test Series 
+                       <span style="font-size: 65%;  "> 2-subject Full Test </span> </p>
+                </div>
+                <div class="col">
+                    <img src="/assets/images/img5.png">
+                    <p>Full Test Series 
+                        <span style="font-size: 65%;  ">10 test series in line with  CUET model</span></p>
+                </div>
+                <div class="col">
+                    <img src="/assets/images/img6.png">
+                    <p>AI based Mentorship 
+                        Card   <span style="font-size: 65%;  "> for self-evaluation (Subject wise)</span> </p>
+                </div>
+                <div class="col">
+                    <img src="/assets/images/img7.png">
+                    <p>Mentors to Guide</p>
+                </div>
+
+            </div>
+
+     </div>    
+
+
+
+     <div class="row whatWe1 ">
+        <div class="whatWe">
+            <p>What we offer</p>
+        </div>
+     </div>
+
+    </div>  
+      
+<section class="product ">
+    <div class="container-fluid">
+        <div class="slider-wrap">
+            <div class="slider-main">
+                <div class="item" *ngFor="let off of offer">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{off.img}}" class="card-img-top" alt="...">
+                        <div class="card-body  card__body">
+                            <h4>{{off.heading}}</h4>
+                          <p  class="card-text">{{off.discription}}</p>
+                        </div>
+                          <button (click)="opendialog(off.videoId)"    class="paly_button"><img src="/assets/images/play.png" ></button>
+
+                      </div>
+                </div>
+            
+             
+       
+            </div>
+            <div class="button_area">
+                <button type="button" appPrev class="prev">
+                    <img src="/assets/images/prev.png" >
+                </button>
+                <button type="button" appNext class="next"><img src="/assets/images/next.png" ></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class=" Courses_div">
+  
+
+    <div class="Course_p"><p>Courses</p></div>
+ 
+    <div class="product2">
+        <div class="container-fluid">
+            <div class="slider-wrap2">
+                <div class="slider-main2">
+                    <div class="item2"   *ngFor="let cour of Courses" >
+                        <div    class="card  card_item" style="width: 18rem;height: 17rem;">
+                            <img src="{{cour.img}}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">{{cour.price}}</h5>
+                              <p class="card-text">{{cour.Discount}} </p>
+                              <a (click)="cp_but1()" class="btn button_BUYNOW" style="color: white;">{{cour.buynow}}</a>
+                            </div>
+                          </div>
+                       
+                     </div>
+             </div>
+
+
+
+
+            <div class="button_area2">
+                <button type="button" appPrev2 class="prev2">
+                    <img src="/assets/images/prev.png" >
+                </button>
+                <button type="button" appNext2 class="next2"><img src="/assets/images/next.png" ></button>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+</div>
+  
+<div class="subject_div">
+  <div class="subject_titel"><p>Subject</p></div>
+
+      <div class="container-fluid">
+        <div class="subject_warps">
+            <div class="subject_main">
+                <div class="item3"  *ngFor="let sub of subject">
+                       
+                      <div class="subject_item">
+                          <div class="subject_item_div1">
+                            <div><img src="{{sub.img}}" ></div>
+                            <div><p>{{sub.subject}}</p></div>
+                          </div>
+                          <div class="subject_item_div2">
+                             <p>{{sub.price}}</p>
+                          </div>
+                      </div>
+
+                </div>   
+  
+            </div>
+            <div class="button_area3">
+                <button type="button" appSubDirPrev class="subjuct_prev">
+                    <img src="/assets/images/prev.png" >
+                </button>
+                <button type="button" appSubDirNext  class="subject_next"><img src="/assets/images/next.png" ></button>
+            </div>
+        </div>
+      </div>
+</div>
+
+
+
+
+
+
+
+
+  
+
+
+ 
+  
+      
+

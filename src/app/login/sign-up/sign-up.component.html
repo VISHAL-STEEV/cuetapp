@@ -1,0 +1,72 @@
+
+<div class="container-fluid containers  "  >
+
+  <div class="container d-flex flex-row " id="main">
+
+    <div class="container-fluid" style="position: relative; left: -2.8rem;">
+      <p class="img-T">Join now <br>
+        and crack CUET  <br>
+        with flying colors</p>
+      <img class="img1" src="/assets/images/image 11.png">
+      <img class="img2" src="/assets/images/frame 1 5.png">
+      <img class="img3" src="/assets/images/CUET reverse logo 1.png">
+    </div>
+  
+  
+    <div class="container-fluid"  style="padding: 0.3rem;">
+
+      <div class="colum" >
+             <p class="signUp_text">
+                sign UP
+             </p>
+             <div class="inputfield_signUp">
+               <form [formGroup]="formValue" >
+              <div class="mb-3  ">
+                <input type="text" formControlName="name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+                <small class="text-danger" *ngIf="formValue.controls['name'].dirty && formValue.hasError('required','name')">*Name is required</small>
+                <small class="text-danger" *ngIf="name?.errors?.['pattern']&&(name?.dirty || name?.touched)">*invalid Name</small>
+            </div>
+              <div class="mb-3">
+                <input type="number"  formControlName="MobileNumber" class="form-control" id="exampleFormControlInput2" placeholder="Mobile Number*">
+                <small class="text-danger" *ngIf="formValue.controls['MobileNumber'].dirty && formValue.hasError('required','MobileNumber')">*Mobile number is required</small>
+            </div>
+              <div class="mb-3">
+                <input type="email"  formControlName="Emailaddress" class="form-control" id="exampleFormControlInput3" placeholder="Email address*">
+                <small class="text-danger" *ngIf="formValue.controls['Emailaddress'].dirty && formValue.hasError('required','Emailaddress')">*email is required</small>
+            </div>
+              <div class="mb-3">
+                <input type="text" formControlName="PasswordTwo" class="form-control" id="exampleFormControlInput4" placeholder="Password*">
+                <small class="text-danger" *ngIf="formValue.controls['PasswordTwo'].dirty && formValue.hasError('required','PasswordTwo')">*Password is required</small>
+            </div>
+              <div class="mb-3">
+                <input type="text" formControlName="PasswordOne" class="form-control" id="exampleFormControlInput5" placeholder="Re-enter Password*">
+                <small  class="text-danger" *ngIf="formValue.controls['PasswordOne'].dirty && formValue.hasError('required','PasswordOne')">*Password is required</small>
+            </div>
+            <div >
+             
+              
+              <button routerLink="/home" class="btn"  [disabled]="!formValue.valid"  (click)="logindata()" type="button">Sign up</button>
+            </div>
+          </form>
+            </div>
+      
+        <p class="span2">
+          By clicking the “Sign up” button, you are creating a CUET Mentor account, and you agree to CUET Mentor's <span class="TErms">Terms of Use </span> and 
+          <span class="TErms">Privacy Policy</span> 
+        </p>    
+    
+          <p class="span3">
+          Already a member? <span class="TErms1" routerLink="/login"> Log in </span> 
+          </p>
+      </div>
+     
+  
+    </div>
+      
+    </div>
+    
+    
+
+
+</div>
+
